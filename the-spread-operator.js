@@ -30,3 +30,16 @@ camWheatley.datesWorked = camWheatley.datesWorked.concat(23);
 let camSpread = [...camWheatley.datesWorked];
 console.log(camWheatley.datesWorked);
 console.log(camSpread)
+
+const multiplyTwoNums = (a, b) => (a * b);
+sum = multiplyTwoNums(66, 134);
+console.log(sum);
+
+let arr4 = [1, 7, 8, 4, 5];
+
+const addToArray = (arr, val) => {
+    return arr.concat(val)
+};
+
+let newArray = addToArray(arr4, 67);
+console.log(newArray);
