@@ -31,15 +31,24 @@ let camSpread = [...camWheatley.datesWorked];
 console.log(camWheatley.datesWorked);
 console.log(camSpread)
 
-const multiplyTwoNums = (a, b) => (a * b);
-sum = multiplyTwoNums(66, 134);
-console.log(sum);
+// Create an arrow function that creates a sentence
 
-let arr4 = [1, 7, 8, 4, 5];
+const createASentence = (line1, line2) => (line1 + line2);
 
-const addToArray = (arr, val) => {
-    return arr.concat(val)
+sentence = createASentence('Hello World!', ' Good morning');
+
+console.log(sentence);
+
+// Working with the rest operator
+
+const addNumbers = (a, b, c, ...moreNums) => {
+    sum = a + b + c;
+
+    for (i in moreNums) {
+        sum =+ i;
+    };
+    return sum
 };
 
-let newArray = addToArray(arr4, 67);
-console.log(newArray);
+result = addNumbers(5, 6, 7, 7, 4, 6, 3);
+console.log(result);
